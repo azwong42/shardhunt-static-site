@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url("../fonts/NotoSans-Regular.2a1861cd1ca7.ttf");
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: url("../fonts/CourierPrime-Regular.fba4686ed1d1.ttf");
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url("../fonts/Caveat-Regular.04c3547e70bd.ttf");
+}
+
+@font-face {
+    font-family: 'Noto Color Emoji';
+    src: url("../fonts/NotoColorEmoji-Regular.1dab949e5586.ttf");
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url("../fonts/Kalam-Regular.b3d0cb828649.ttf");
+}
+
+@font-face {
+    font-family: 'Computer Modern';
+    src: url("../fonts/ComputerModern-Regular.16735f17d996.otf");
+}
+
+@font-face {
+    font-family: 'Crayon Crumble';
+    src: url("../fonts/DkCrayonCrumble-ddll.c5da236b21d9.ttf");
+}

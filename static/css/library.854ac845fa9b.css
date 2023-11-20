@@ -1,0 +1,112 @@
+.mark-panel-hex {
+    border-radius: 1em;
+    bottom: 2em;
+    cursor: pointer;
+    font-size: 1em;
+    height: 2em;
+    position: fixed !important;
+    right: 1.5em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mark-panel-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 30px !important;
+}
+
+.mark-panel-hex.mark-rotate {
+    transform: rotate(30deg);
+}
+
+.mark-panel-hex.mark-rotate:hover {
+    transform: rotate(30deg) scale(1.1);
+}
+
+.bookmarks-panel {
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: #f9f8f5;
+    bottom: 5.5em;
+    font-size: 1em;
+    height: 4.6em;
+    padding: 0.8em 0.8em;
+    position: fixed !important;
+    right: 1.5em;
+}
+
+.bookmarks-overlay {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+    opacity: 50%;
+    z-index: 9999;
+}
+
+.bookmarks-input, .bookmarks-make {
+    border: 2px solid var(--main-color);
+    border-radius: 1em;
+    background-color: var(--off-white);
+    font-size: 1em;
+    width: 20em;
+    padding: 0.8em 0.8em;
+    position: fixed !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+.bookmarks-input {
+    height: 25em;
+}
+
+.bookmarks-make {
+    height: 9em;
+}
+
+.bookmarks-input .divider {
+    height: 3em;
+    padding: 0;
+    width: 100%;
+}
+
+.bookmarks-list {
+    height: calc(100% - 7em - 10px);
+    margin-bottom: 5px;
+    overflow-y: auto;
+}
+
+.bookmarks-list-entry {
+    display: block;
+    width: 95%;
+    margin: auto auto 3px;
+    border: 2px solid black;
+    padding: 4px;
+    transition: background-color 0.3s;
+}
+
+.bookmarks-list-entry:not(.focused):hover {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.bookmarks-list-entry .btn {
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bookmarks-add {
+    height: 2em;
+    margin-bottom: 10px;
+}
+
+.bookmarks-go {
+    height: 2em;
+}

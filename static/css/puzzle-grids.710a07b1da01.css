@@ -1,0 +1,195 @@
+.crossword, .chessboard {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    border-collapse: collapse;
+}
+
+.chessboard {
+    margin: 65px auto;
+}
+
+.crossword td, .crossword tr:last-child td, .chessboard td, .chessboard:last-child td {
+    padding: 0;
+    margin: 0;
+}
+
+.crossword td, .crossword tr:last-child td {
+    border: 1px solid black;
+}
+
+.crossword td div, .chessboard td div {
+    display: table-cell;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.crossword td div {
+    width: 30px;
+    height: 30px;
+}
+
+.chessboard td div {
+    width: 60px;
+    height: 60px;
+}
+
+.crossword td.block,
+.crossword td.block div {
+    background-color: black;
+}
+
+.chessboard td {
+    border: none;
+}
+
+.chessboard tr:nth-child(odd) td:nth-child(odd),
+.chessboard tr:nth-child(odd) td:nth-child(odd) div {
+    background-color: #f2e1c3;
+}
+
+.chessboard tr:nth-child(even) td:nth-child(even),
+.chessboard tr:nth-child(even) td:nth-child(even) div {
+    background-color: #f2e1c3;
+}
+
+.chessboard tr:nth-child(odd) td:nth-child(even),
+.chessboard tr:nth-child(odd) td:nth-child(even) div{
+    background-color: #c3a082;
+}
+
+.chessboard tr:nth-child(even) td:nth-child(odd),
+.chessboard tr:nth-child(even) td:nth-child(odd) div {
+    background-color: #c3a082;
+}
+
+.chessboard tr::before,
+.chessboard tr::after,
+.chessboard tr:nth-child(1) td::before,
+.chessboard tr:nth-child(8) td::after {
+    display: inline-block;
+    position: absolute;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.chessboard tr::before {
+    transform: translateX(-60px);
+}
+
+.chessboard tr:nth-child(1) td::before {
+    transform: translateY(-60px);
+}
+
+.chessboard tr:nth-child(1)::before,
+.chessboard tr:nth-child(1)::after {
+    content: "8";
+}
+
+.chessboard tr:nth-child(2)::before,
+.chessboard tr:nth-child(2)::after {
+    content: "7";
+}
+
+.chessboard tr:nth-child(3)::before,
+.chessboard tr:nth-child(3)::after {
+    content: "6";
+}
+
+.chessboard tr:nth-child(4)::before,
+.chessboard tr:nth-child(4)::after {
+    content: "5";
+}
+
+.chessboard tr:nth-child(5)::before,
+.chessboard tr:nth-child(5)::after {
+    content: "4";
+}
+
+.chessboard tr:nth-child(6)::before,
+.chessboard tr:nth-child(6)::after {
+    content: "3";
+}
+
+.chessboard tr:nth-child(7)::before,
+.chessboard tr:nth-child(7)::after {
+    content: "2";
+}
+
+.chessboard tr:nth-child(8)::before,
+.chessboard tr:nth-child(8)::after {
+    content: "1";
+}
+
+.chessboard tr:nth-child(1) td:nth-child(1)::before,
+.chessboard tr:nth-child(8) td:nth-child(1)::after {
+    content: "a";
+}
+
+.chessboard tr:nth-child(1) td:nth-child(2)::before,
+.chessboard tr:nth-child(8) td:nth-child(2)::after {
+    content: "b";
+}
+
+.chessboard tr:nth-child(1) td:nth-child(3)::before,
+.chessboard tr:nth-child(8) td:nth-child(3)::after {
+    content: "c";
+}
+
+.chessboard tr:nth-child(1) td:nth-child(4)::before,
+.chessboard tr:nth-child(8) td:nth-child(4)::after {
+    content: "d";
+}
+
+.chessboard tr:nth-child(1) td:nth-child(5)::before,
+.chessboard tr:nth-child(8) td:nth-child(5)::after {
+    content: "e";
+}
+
+.chessboard tr:nth-child(1) td:nth-child(6)::before,
+.chessboard tr:nth-child(8) td:nth-child(6)::after {
+    content: "f";
+}
+
+.chessboard tr:nth-child(1) td:nth-child(7)::before,
+.chessboard tr:nth-child(8) td:nth-child(7)::after {
+    content: "g";
+}
+
+.chessboard tr:nth-child(1) td:nth-child(8)::before,
+.chessboard tr:nth-child(8) td:nth-child(8)::after {
+    content: "h";
+}
+
+.crossword td div span {
+    position: absolute;
+    font-size: 12px;
+    line-height: 12px;
+    top: 0;
+    left: 1px;
+}
+
+.crossword-clues {
+    display: flex;
+    justify-content: space-between;
+}
+
+.crossword-clues-column {
+    flex: 48%;
+    flex-grow: 0;
+}
+
+.crossword-clues-column h4 {
+    margin-bottom: 5px;
+}
+
+.crossword-clues-column li {
+    margin-bottom: 0;
+}
