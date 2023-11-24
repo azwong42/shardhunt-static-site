@@ -1,0 +1,563 @@
+
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from 127.0.0.1:8000/solution/its-your-turn by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 03:59:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    
+<title>Solution: It&#x27;s Your Turn</title>
+
+    <meta name="viewport" content="width=device-width initial-scale=0.75">
+    <meta property="og:title" content="Shardhunt">
+    <meta property="og:description" content="The exploration has begun.">
+    <meta property="og:image" content="../static/images/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.092b250a55aa.css">
+    <link rel="stylesheet" href="../static/css/base.09c8dbf8f47c.css">
+    <link rel="stylesheet" href="../static/css/fonts.0d13199733e6.css">
+    <link rel="stylesheet" href="../static/css/library.854ac845fa9b.css">
+    <link rel="stylesheet" href="../static/css/hexgrid.8817683fd1a7.css">
+    <link rel="stylesheet" href="../static/css/story.dbb1df459a18.css">
+    <link rel="stylesheet" href="../static/css/puzzle-grids.710a07b1da01.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../jsi18n/index.html"></script>
+    <script src="../static/js/sorttable.cc47c001d30b.js"></script>
+    <script src="../static/js/tray.ac18af883297.js"></script>
+    <script src="../static/js/notify.2b055445483b.js"></script>
+    <script src="../static/js/time.70f27cb606d3.js"></script>
+    <script src="../static/js/babel-locations.ec43edbaa60f.js"></script>
+    <script src="../static/js/babel-math.c816e003c61f.js"></script>
+    <script src="../static/js/babel-strings.2eb8330794d5.js"></script>
+    <script src="../static/js/english.0a5c0de9794d.js"></script>
+    <script src="../static/js/library-of-babel.ea7f119ed0be.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.7efa6e756590.ico" type="image/vnd.microsoft.icon">
+    
+    
+    
+</head>
+<body>
+    <a class="skip-to-main">Press enter to skip to main content.</a>
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <svg style="width: 80px; height: 40px; transform:scaleX(-1);">
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.12105891,-0.06989339,-0.06989339,0.12105891,15.937645,34.081971)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.08954302,-0.05169769,-0.05169769,0.08954302,27.365155,27.196551)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.05560687,-0.03210465,-0.03210465,0.05560687,35.172065,19.782371)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                </svg>
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a href="../the-library.html">
+                    The Library
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                
+                <svg style="width: 80px; height: 40px;">
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.12105891,-0.06989339,-0.06989339,0.12105891,15.937645,34.081971)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.08954302,-0.05169769,-0.05169769,0.08954302,27.365155,27.196551)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.05560687,-0.03210465,-0.03210465,0.05560687,35.172065,19.782371)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                </svg>
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/its-your-turn.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+            <a href="../login.html" class="btn">Login</a>
+        
+        </div>
+    </nav>
+    
+    <script>
+    
+    
+    </script>
+    <div class="content">
+        
+
+<style>
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 2rem 0;
+}
+</style>
+
+<h1>
+    Solution: It&#x27;s Your Turn
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer spoiler">IRAN</span></div>
+</h1>
+
+<main class="puzzle-main">
+    <h2 style="margin-top: 0">
+        Written by
+        
+Mitchell Rosenberg, Thomas Gordon, Adeline Wong, and Ella Sheffield
+
+    </h2>
+
+    
+    <style>
+    .crossword td.extract-bandage {
+        background-color: lightcoral;
+    }
+
+    .crossword td.extract-vine {
+        background-color: lightgreen;
+    }
+
+    .crossword td.extract-mist {
+        background-color: lightblue;
+    }
+
+    .crossword tr td div {
+        text-align: center;
+    }
+
+    .misty-steps {
+        display: flex;
+        max-width: 200px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto auto 20px;
+        gap: 20px;
+    }
+
+    .misty-steps table {
+        flex-basis: 45%;
+    }
+
+    .movement-grid {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .movement-grid tr::before,
+    .movement-grid tr:nth-child(1) td::before {
+        display: inline-block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .movement-grid tr::before {
+        transform: translateX(-30px);
+    }
+
+    .movement-grid tr:nth-child(1) td::before {
+        transform: translateY(-30px);
+    }
+
+    .movement-grid tr:nth-child(1)::before {
+        content: "1";
+    }
+
+    .movement-grid tr:nth-child(2)::before {
+        content: "2";
+    }
+
+    .movement-grid tr:nth-child(3)::before {
+        content: "3";
+    }
+
+    .movement-grid tr:nth-child(4)::before {
+        content: "4";
+    }
+
+    .movement-grid tr:nth-child(5)::before,
+    .chessboard tr:nth-child(5)::after {
+        content: "5";
+    }
+
+    .movement-grid tr:nth-child(6)::before {
+        content: "6";
+    }
+
+    .movement-grid tr:nth-child(7)::before {
+        content: "7";
+    }
+
+    .movement-grid tr:nth-child(8)::before {
+        content: "8";
+    }
+
+    .movement-grid tr:nth-child(9)::before {
+        content: "9";
+    }
+
+    .movement-grid tr:nth-child(10)::before {
+        content: "10";
+    }
+
+    .movement-grid tr:nth-child(11)::before {
+        content: "11";
+    }
+
+    .movement-grid tr:nth-child(12)::before {
+        content: "12";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(1)::before {
+        content: "A";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(2)::before {
+        content: "B";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(3)::before {
+        content: "C";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(4)::before {
+        content: "D";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(5)::before {
+        content: "E";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(6)::before {
+        content: "F";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(7)::before {
+        content: "G";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(8)::before {
+        content: "H";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(9)::before {
+        content: "I";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(10)::before {
+        content: "J";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(11)::before {
+        content: "K";
+    }
+
+    .movement-grid tr:nth-child(1) td:nth-child(12)::before {
+        content: "L";
+    }
+
+    .red {
+        background-color: lightcoral;
+    }
+</style>
+
+<p>The first thing we might note upon opening this puzzle is that there are five parts! Four of them are locked, however
+(including a specially-marked one at the end), so we should start by solving the only one available to us: Action.</p>
+<h3>Action</h3>
+<p>This puzzle is a transcript of a D&amp;D 5e encounter, where the results of the dice rolled during the encounter are highlighted
+(and one of the characters makes reference to "keeping track of those, for whatever reason). Notably, however, the
+players never announce what their raw rolls are—they always present the modified number, or compare the total to something
+else, or forget to actually add their numbers from multiple dice together.</p>
+<p>Based on information provided by the dialogue
+(crucially, everyone is level two, and we know their classes [and subclasses, where relevant]), we can piece together
+the raw results of each roll during the encounter. Rules information, including character abilities, spells, and stats
+for the Giant Spider, are available from a <a href="https://roll20.net/compendium/dnd5e/BookIndex" target="_blank">variety</a> of
+<a href="https://www.dndbeyond.com/game-rules" target="_blank">sources</a>&nbsp;<a href="https://www.5esrd.com/" target="_blank">online</a>.</p>
+<table><tr><th>Roll</th><th>Given</th><th>Raw</th><th>Calculation</th><th>Deductions / Other Notes</th></tr><tr><td>Initiative - Ranger</td><td>23</td><td>19</td><td>19 + 4 (ranger dex)</td><td>-</td></tr><tr><td>Initiative - Bard</td><td>13</td><td>12</td><td>12 + 0 (bard dex) + 1 (1/2 prof)</td><td>-</td></tr><tr><td>Initiative - Wizard</td><td>-</td><td>-</td><td>-</td><td>Ignored (Portent) - this also lets us know the Wizard is a Diviner, and thus has no other subclass abilities
+            of note at this level
+        </td></tr><tr><td>Initiative - Giant Spider</td><td>4</td><td>1</td><td>1 + 3 (spider dex)</td><td>-</td></tr><tr><td>Attack (longbow) - Ranger</td><td>27</td><td>19</td><td>19 + 4 (ranger dex) + 2 (prof) + 2 (archery)</td><td>-</td></tr><tr><td>Damage (longbow) - Ranger</td><td>12</td><td>8</td><td>8 + 4 (ranger dex)</td><td>Since we know the ranger rolled max damage on the die, we can calculate their DEX modifier to be (12 - 8 =
+            4)
+        </td></tr><tr><td>Performance check - Bard</td><td>15</td><td>9</td><td>9 + 5 (bard cha) + 1 (1/2 prof)</td><td>The Bard calls out that they do not have proficiency, so Jack of All Trades applies here</td></tr><tr><td>Color spray - Wizard</td><td>14</td><td>14</td><td>14</td><td>12 damage has been dealt to the 26hp Giant Spider so far</td></tr><tr><td>Attack (web) - Giant Spider</td><td>12</td><td>7</td><td>7 + 5 (atk)</td><td>Since this is exactly enough to hit, and (per later dialogue) the bard is wearing studded leather armor, we
+            can calculate their DEX modifier to be (12 - 12 = 0)
+        </td></tr><tr><td>Attack (web) - Giant Spider</td><td>18</td><td>13</td><td>13 + 5 (atk)</td><td>Two rolls are made because the spider has disadvantage from being blinded</td></tr><tr><td>Strength save (vs entagle) - Giant Spider</td><td>7</td><td>5</td><td>5 + 2 (spider str)</td><td>The spider fails its save by 3, against a spell save DC of 8 (base) + 0 (ranger wis) + 2 (prof)</td></tr><tr><td>Constitution save (vs thunderwave) - Giant Spider</td><td>13</td><td>12</td><td>12 + 1 (spider con)</td><td>-</td></tr><tr><td>Damage (thunderwave) - Bard</td><td>5</td><td>5</td><td>1 + 4</td><td>-</td></tr><tr><td>Attack (witch bolt) - Wizard</td><td>10</td><td>5</td><td>5 + 3 (wizard int) + 2 (prof)</td><td>The roll is ignored, which technically isn't valid by the rules as written, but it's explicitly called out
+            in the dialogue
+        </td></tr><tr><td>Attack (witch bolt) - Wizard</td><td>-</td><td>-</td><td>-</td><td>Ignored (Portent), but notably, this is a critical hit</td></tr><tr><td>Damage (witch bolt) - Wizard</td><td>23</td><td>23</td><td>12 + 11</td><td>Since this is a critical hit, the Wizard rolls 2d12 instead of 1d12</td></tr><tr><td>Special Ability Recharge - Giant Spider</td><td>5</td><td>5</td><td>5</td><td>Web recharges on a 5 or 6, and this is noted to not be a 6</td></tr><tr><td>Strength check (vs entangle) - Giant Spider</td><td>1</td><td>1</td><td>1</td><td>-</td></tr><tr><td>Attack (longbow) - Ranger</td><td>24</td><td>16</td><td>16 + 4 (ranger dex) + 2 (prof) + 2 (archery)</td><td>-</td></tr><tr><td>Attack (longbow) - Ranger</td><td>23</td><td>15</td><td>15 + 4 (dex) + 2 (prof) + 2 (archery)</td><td>-</td></tr><tr><td>Damage (longbow + arrow of slaying) - Ranger</td><td>18</td><td>14</td><td>2 + 4 (ranger dex) + 12</td><td>The chance for exactly 12 and exactly 54 on 6d10 are the same, but the Ranger claims this roll is bad</td></tr></table>
+
+<p>Interpreting the raw rolls using A1Z26 gives us <b>SLASHING MELEE WEAPON</b>. Calling it in gives us an action prompt—which, when
+completed, provides the subpuzzle answer <b>TINY</b>—and two new subpuzzles: Bonus Action and Movement.</p>
+<p>(For a complete list of submission prompts, see <a href="its-your-turn.html#appendix">appendix 1</a>.)</p>
+<h3>Bonus Action</h3>
+<p>Each of the crosswords solves like so:</p>
+<h4 style="text-align: center;">Healing Word</h4>
+
+<p>Bandages can start anywhere in the row, travel in either direction, and wrap around.</p>
+<table class="crossword" style="margin-bottom: 15px;"><tr><td class="extract-bandage"><div><span>1</span>G</div></td><td><div><span>2</span>O</div></td><td><div><span>3</span>E</div></td><td><div><span>4</span>R</div></td></tr><tr><td class="extract-bandage"><div><span>5</span>E</div></td><td><div>R</div></td><td><div>N</div></td><td><div>O</div></td></tr><tr><td class="extract-bandage"><div><span>6</span>T</div></td><td><div>E</div></td><td><div>T</div></td><td><div>O</div></td></tr><tr><td class="extract-bandage"><div><span>7</span>Y</div></td><td><div>O</div></td><td><div>R</div></td><td><div>K</div></td></tr><tr><td class="extract-bandage"><div><span>8</span>O</div></td><td><div>B</div></td><td><div>O</div></td><td><div>L</div></td></tr><tr><td class="extract-bandage"><div><span>9</span>U</div></td><td><div>R</div></td><td><div>P</div></td><td><div>O</div></td></tr><tr><td class="extract-bandage"><div><span>10</span>R</div></td><td><div>A</div></td><td><div>Y</div></td><td><div>T</div></td></tr></table>
+<table><tr><td><b>#</b></td><td><b>Bandage Clues</b></td><td><b>Answers</b></td></tr><tr><td>1</td><td>Shrek, for instance</td><td>OGRE</td></tr><tr><td>5</td><td>Inventor Rubik</td><td>ERNO</td></tr><tr><td>6</td><td>Bag type</td><td>TOTE</td></tr><tr><td>7</td><td>Their Richard gave battle in vain</td><td>YORK</td></tr><tr><td>8</td><td>Charon's coin</td><td>OBOL</td></tr><tr><td>9</td><td>Rain heavily</td><td>POUR</td></tr><tr><td>10</td><td>Platter</td><td>TRAY</td></tr></table>
+<table><tr><td><b>#</b></td><td><b>Limb Clues</b></td><td><b>Answers</b></td></tr><tr><td>1</td><td>??? / ???</td><td>GET / YOUR</td></tr><tr><td>2</td><td>Cookie of crossword fame / Undergarment</td><td>OREO / BRA</td></tr><tr><td>3</td><td>Decay</td><td>ENTROPY</td></tr><tr><td>4</td><td>Corner piece? / Carpark</td><td>ROOK / LOT</td></tr></table>
+
+<p>This crossword extracts to the answer GET YOUR.</p>
+<hr>
+<h4 style="text-align: center;">Grasping Vine</h4>
+
+<p>Vines start at a 🌱, end at a 🍃, and never self-intersect. (Multiple vines can end at the same 🍃.)</p>
+<table class="crossword" style="margin-bottom: 15px;"><tr><td class="block"><div></div></td><td><div><span>1🌱</span>N</div></td><td class="extract-vine"><div>S</div></td><td><div><span>2🌱</span>T</div></td><td class="block"><div></div></td><td><div><span>3🌱</span>M</div></td><td class="extract-vine"><div>O</div></td><td><div><span>4🌱</span>O</div></td><td class="block"><div></div></td></tr><tr><td><div><span>5🌱</span>M</div></td><td><div>O</div></td><td class="block"><div></div></td><td><div>E</div></td><td><div>R</div></td><td><div>M</div></td><td class="block"><div></div></td><td><div>S</div></td><td><div><span>🍃</span>E</div></td></tr><tr><td class="block"><div></div></td><td><div>D</div></td><td class="extract-vine"><div>E</div></td><td><div>S</div></td><td class="block"><div></div></td><td><div>A</div></td><td class="extract-vine"><div>N</div></td><td><div>U</div></td><td class="block"><div></div></td></tr><tr><td><div><span>6🌱</span>P</div></td><td><div>E</div></td><td class="block"><div></div></td><td><div>T</div></td><td><div>R</div></td><td><div>I</div></td><td class="block"><div></div></td><td><div>A</div></td><td><div><span>🍃</span>L</div></td></tr><tr><td class="block"><div></div></td><td><div><span>🍃</span>K</div></td><td class="extract-vine"><div>C</div></td><td><div>A</div></td><td class="block"><div></div></td><td><div>A</div></td><td class="extract-vine"><div>D</div></td><td><div><span>🍃</span>S</div></td><td class="block"><div></div></td></tr></table>
+<table><tr><td><b>#</b></td><td><b>Clue</b></td><td><b>Answer</b></td></tr><tr><td>1</td><td>Part of a network / Arrange in a tower</td><td>NODE / STACK</td></tr><tr><td>2</td><td>Label / Antlered animal</td><td>TERM / MOOSE</td></tr><tr><td>3</td><td>Cow sound / Sky feature during the day / Sky feature during always / To turn a boat</td><td>MOO / SUN / AIR / TACK</td></tr><tr><td>4</td><td>Rhythm game with a pink logo / Wet nymphs</td><td>OSU / NAIADS</td></tr><tr><td>5</td><td>Excellent resource for 5e creatures</td><td>MONSTER MANUAL</td></tr><tr><td>6</td><td>Walker / Do drugs</td><td>PEDESTRIAN / USE</td></tr></table>
+
+<p>This crossword extracts to the answer SECOND.</p>
+<hr>
+<h4 style="text-align: center;">Misty Step</h4>
+
+<p>Misty cells (🌀s) are paired; when a clue lands on a misty cell, it teleports to a misty cell on the opposite corner of a different quadrant and continues in the same direction.</p>
+<div class="misty-steps"><table class="crossword"><tr><td><div><span>1</span>A</div></td><td><div>R</div></td><td><div><span>🌀</span>T</div></td></tr><tr><td><div>M</div></td><td class="block"><div></div></td><td><div>T</div></td></tr><tr><td><div><span>🌀</span>O</div></td><td><div>R</div></td><td class="extract-mist"><div><span>🌀</span>W</div></td></tr></table><table class="crossword"><tr><td><div><span>🌀</span>I</div></td><td><div>C</div></td><td><div><span>2</span>H</div></td></tr><tr><td><div>L</div></td><td class="block"><div></div></td><td><div>O</div></td></tr><tr><td class="extract-mist"><div><span>🌀</span>I</div></td><td><div>B</div></td><td><div><span>🌀</span>L</div></td></tr></table><table class="crossword"><tr><td><div><span>🌀</span>E</div></td><td><div>T</div></td><td class="extract-mist"><div><span>🌀</span>N</div></td></tr><tr><td><div>U</div></td><td class="block"><div></div></td><td><div>G</div></td></tr><tr><td><div><span>3</span>P</div></td><td><div>R</div></td><td><div><span>🌀</span>A</div></td></tr></table><table class="crossword"><tr><td class="extract-mist"><div><span>🌀</span>D</div></td><td><div>A</div></td><td><div><span>🌀</span>G</div></td></tr><tr><td><div>M</div></td><td class="block"><div></div></td><td><div>H</div></td></tr><tr><td><div><span>🌀</span>I</div></td><td><div>S</div></td><td><div>T</div></td></tr></table></div>
+<table><tr><td><b>#</b></td><td><b>Across Clue</b></td><td><b>Answer</b></td></tr><tr><td>1</td><td>Creator</td><td>ARTIST</td></tr><tr><td>3</td><td>The devil's clothing? / Fowl offal / Largest city in Norfolk</td><td>PRADA / GIBLET / NORWICH</td></tr></table>
+<table><tr><td>#</td><td><b>Down Clue</b></td><td><b>Answer</b></td></tr><tr><td>2</td><td>Funny phrase, with "us" / Allow or confess / A contemporary saga</td><td>AMONG / ADMIT / TWILIGHT</td></tr><tr><td>4</td><td>Hide (2 wds)</td><td>HOLE UP</td></tr></table>
+
+<p>This crossword extracts to the answer WIND.</p>
+<p>Concatenating all of the answers to the mini-crosswords, we get the phrase <b>GET YOUR SECOND WIND</b>. This is another action prompt,
+which gives us the subpuzzle answer <b>LAGER</b>.</p>
+<p>Once we've called in the action prompt for either Bonus Action or Movement, we unlock a new subpuzzle: Reaction.</p>
+<h3>Movement</h3>
+<p>This is a modified <a href="http://www.cross-plus-a.com/puzzles.htm#Tents" target="_blank">Tents</a> puzzle, where the
+tents and trees hamper the movement of our three intrepid adventurers. Descriptions of their movements are required to
+uniquely place all the tents; once all of their locations are known, reading the square each character lands on at
+the end of each movement (in the given order in "The Encounter") yields <b>RUN AROUND DIFFICULT TERRAIN</b>. This is another
+action prompt, which gives us the subpuzzle answer <b>TAXING</b>.</p>
+<p>(See <a href="its-your-turn.html#appendix-2">appendix 2</a> for a full logical solution path, including the completed grid.)</p>
+<p>Once we've called in the action prompt for either Bonus Action or Movement, we unlock a new subpuzzle: Reaction.</p>
+<h3>Reaction</h3>
+<p>Each player turns exactly six times, and then exits the grid on the left hand side. </p>
+<p><b>Bard:</b> The bard turns on each subsequent note in the A minor pentatonic scale (which are, in order, A, C, D, E, G, and A).</p>
+<p>TAHITI <br>
+CURVED <br>
+DANCER <br>
+EDGIER <br>
+DIGITS <br>
+PARODY</p>
+<p><b>Ranger:</b> The ranger turns on letters which match the direction they're travelling (which are, in order, R, D, L, U, R, and D). </p>
+<p>EMPIRE <br>
+NOBODY <br>
+REPLAY <br>
+CORPUS <br>
+RIBBON <br>
+EDGIER</p>
+<p><b>Wizard:</b> The wizard turns on ascenders (b, d, f, h, i, j, k, l, or t) or descenders (g, j, q, p, or y) which are in the 
+same position as the number of turns they've taken so far (or in the first, if they've taken none). (The matching letters are, 
+in order, T, G, I, F, I, and T.)</p>
+<p>TUNNEL<br>
+GALAXY<br>
+LIKELY<br>
+EFFECT<br>
+TAHITI <br>
+GROWTH</p>
+<p>For each player, if you list all of the words on which they turn, and read down the diagonal, you get the following phrases:</p>
+<ul><li>Bard: TUNITY</li><li>Ranger: EOPPOR</li><li>Wizard: TAKETH</li></ul>
+
+<p>Ordering by which row they exit the grid from (Wizard, then Ranger, then Bard) gives the phrase <b>TAKE THE OPPORTUNITY</b>, another
+action prompt. Completing this prompt gives us the subpuzzle answer <b>SCARED</b>.</p>
+<p>Once any three of the four subpuzzles have had their action prompts called in, we unlock the final subpuzzle! It's a meta,
+Action Surge.</p>
+<h3>Action Surge</h3>
+<p>For this final subpuzzle, we're presented with a list of four crossword clues and flavor text telling us to use our
+"extra action". We are, of course, attempting extraction (only one A)—and indeed, our four subpuzzle answers (TINY, LAGER,
+TAXING, and SCARED) can have a letter doubled to make a new word that fits one of the crossword clues. Reading the doubled
+letters in clue order gives <span class="spoiler">IRAN</span>, the puzzle's final answer.</p>
+<table><tr><th>Clue</th><th>Answer</th></tr><tr><td>What an aircraft might be doing</td><td>TAX<span class="ext-letter">II</span>NG</td></tr><tr><td>Showing injury</td><td>SCA<span class="ext-letter">RR</span>ED</td></tr><tr><td>Vehicular encampment</td><td>L<span class="ext-letter">AA</span>GER</td></tr><tr><td>Thin-sounding</td><td>TI<span class="ext-letter">NN</span>Y</td></tr></table>
+
+    
+    
+    <h2 id="authors-notes">Author&rsquo;s Notes</h2>
+    
+<p><b>Adeline: </b>
+    I'm a big fan of D&D, and I'm also a big fan of action submission puzzles, so naturally I was excited when Mitchell
+    first pitched this one. I didn't actually write anything for it until I got involved factchecking the Action solution,
+    at which point I thought, "hey, this puzzle could be doing <i>much</i> more devious things with ability interactions."
+    I had to restrain myself from making anything <i>too</i> cursed—all of the abilities and spells mentioned are free to
+    access, and any 5e rules nerd will have no problem at all with following the numbers—but there's definitely a universe
+    out there where this puzzle was written for Floor 3 and includes some ridiculous untelegraphed sorcadin build and/or
+    a bunch of the feat minutiae that no one ever uses (Dwarf Fortitude to spend hit dice in combat, anyone?). But as it
+    is, I hope it was reasonably solvable for everyone.
+</p>
+
+<p><b>Thomas: </b>
+    I wanted to write some proper word puzzles for this hunt, and this was a good opportunity to do so, through both Bonus Action 
+    and Reaction. Though seasoned crossword constructors may not find much remarkable about the crossword minis here, 
+    I'm pretty proud of them as solid, interesting-ly gimmicked minis, with decent clues (including some that just make me laugh). 
+    (My favourite is "sky feature during always".)
+</p>
+
+    
+
+    
+    
+    <h2 id="appendix">
+Appendix: Action Prompts
+</h2>
+    <h4>SLASHING MELEE WEAPON</h4>
+<p>Submit a video or photo showing us an innovative way to defeat your enemies! Please demonstrate to us a way to
+repurpose a common household item into a slashing melee weapon, in any (non-dangerous) way you choose. The item
+must be something NOT originally intended for use as a weapon. Email us at submissions@shardhunt.com, and make
+sure the subject line of your email includes only the phrase SLASHING MELEE WEAPON.</p>
+<h4>GET YOUR SECOND WIND</h4>
+<p>Replenish some of your energy! To keep your strength up after a tiring round of puzzling, it's important to make
+sure that everyone is hydrating. Please submit a photo or video containing proof that the members of your team
+are drinking healthy amounts of liquid during this puzzlehunt! Email your evidence to submissions@shardhunt.com,
+and make sure the subject line of your email includes only the phrase GET YOUR SECOND WIND.</p>
+<h4>RUN AROUND DIFFICULT TERRAIN</h4>
+<p>Finding the difficult terrain was the first step; now you have to avoid it! Please submit a video or photo of a
+dramatized game of "The Floor is Lava" to submissions@shardhunt.com. Make sure that the subject line of your email
+includes only the phrase RUN AROUND DIFFICULT TERRAIN.</p>
+<h4>TAKE THE OPPORTUNITY</h4>
+<p>Opportunities don't come often, and when they do, they're usually quick to pass! Why don't you take this
+opportunity to tell us a fun fact or story you've been dying to share with someone--the more bizarre, the better?
+Email your submission to submissions@shardhunt.com, and make sure the subject line of your email includes only the
+phrase TAKE THE OPPORTUNITY.</p>
+    
+
+    
+    
+    <h2 id="appendix-2">
+Appendix: Movement Logic
+</h2>
+    <p>Note that this is only one potential logical solution; others may exist.</p>
+<p>We can start the logic puzzle by placing some tents according to the <a href="http://www.cross-plus-a.com/puzzles.htm#Tents" target="_blank">
+usual Tents rules</a>: there must be a tent in K7
+to satisfy the tree in L7, which forces tents in L5 and L9 (since no two tents can be adjacent). The L5 tent then forces a
+tent in J5, while the L9 tent forces one in J10.</p>
+<p>We can also mark a good number of squares as tentless simply because they are not horizontally or vertically adjacent
+to a tree.</p>
+<table class="crossword movement-grid"><tr><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td></tr><tr><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td></tr><tr><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td></tr></table>
+
+<p>For the first "round" of three moves, we note that the Ranger ends up in F1, so there is either a tent in B1 or in F1 (but not both).
+The Bard ends up in A6, so we need tents in both A2 and A5. But that only brings the Bard to 35 feet of movement, so we
+<i>also</i> need a tent in A7 to prevent them from moving further. (Per the rules, they end their turn and waste the unused movement.)
+Since the Bard forces the tent in A2, the tent forced by the Ranger must be in F1.</p>
+<p>The Wizard moves to L1, but gives us no useful information about the tents.</p>
+<table class="crossword movement-grid"><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td></tr><tr><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td></tr></table>
+
+<p>In the next round, the Ranger reaches F6 (if they encounter no tents) or F7 (if there is a tent in F4, F8, or both).
+The Bard does <i>not</i> reach A12, so there must be a tent in A10. The Wizard ends up in L5 whether or not there is a tent
+H3.</p>
+<table class="crossword movement-grid"><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td></tr></table>
+
+<p>In the next round, the Ranger ends up in A6 or A7 (we still don't know where they ended their last move). The Bard ends up
+in F11 (if they encounter two tents within C11, E11, and F11) or G11 (if they encounter no tents in those squares). They
+cannot encounter only a single tent, because they end the turn with unused movement. The Wizard reaches G10, which means
+there is a tent in one of F11, G10, or H9.</p>
+<p>[grid omitted; no new deductions have been made with certainty]</p>
+<p>The round after that, however, does resolve some locations! The Ranger must have come from A6, because coming from A7
+would mean running into the grid's edge before travelling 6 tiles. So there must be a tent in F4, F8, or both. We
+also know that there are no tents along the line that they travel this turn.</p>
+<p>The Bard's location remains unknown—they end up in K11 (coming from F11 and encountering exactly one tent in H11 or L11) or L11 (coming
+from F11 and encountering no tents, or coming from G11 and encountering 0, 1, or 2 tents in H11 and L11). The Wizard ends up
+in I12 no matter what.</p>
+<table class="crossword movement-grid"><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td></tr></table>
+
+<p>In the next round, we lose track of the Ranger again: they end up in one of G6, G7, or G8, depending on whether
+they encounter 0, 1, or 2 tents among G10, G8, G6, and G5. The Bard, however, resurfaces! Since they only pass through
+two movement penalty tiles (ending up in K6), they must have ended up in K11 last round—so they came from F11 before that,
+and we can place nearly all of the appropriate tents.</p>
+<p>The Wizard is flying again, but they do give us some useful information this time: there's a tent in I1.</p>
+<table class="crossword movement-grid"><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td></tr></table>
+
+<p>The Ranger is key in this round: They must end up in G3, G4, or G6 in order to potentially be diagonally adjacent
+to a tent (and a tree). Starting in G8, their lowest possible position from last round, and encountering the maximum number
+of tents on the way (1, because there can't be a tent in both G5 and G6) takes them all the way to G3. So they must end
+up in G3, and they must have come from G8. Additionally, since there now must be a tent in F4 or H4 (for the Ranger to
+end diagonally to), there <i>cannot</i> be a tent in G5. So there must be one in G6 instead. The placement of the Ranger's
+required tents from last round (G8 and G10) also force the Bard's last remaining tent from two rounds ago into L11.
+<i>Additionally</i> additionally, the new tents in column G force a tent into H4 (to satisfy the H5 tree), which
+in turn forces tents into J3, then L3.</p>
+<p>The Bard resolves easily, moving a paltry one tile and ending in L7. The <i>Wizard</i>, on the other hand . . . moves.</p>
+<p>We'll get back to them.</p>
+<table class="crossword movement-grid"><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div></div></td><td><div></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div></div></td><td><div>🌳</div></td><td><div></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr></table>
+
+<p>On the next round, the Ranger once again ventures into unknown territory. They end up in A9, B8, or C7, depending on whether
+they encounter 0, 1, or 2 tents among F4, E5, and C7. The Bard pauses in L12, then dashes . . . somewhere. Luckily,
+however, the entire party is not lost—of the five tiles reachable by the Wizard last turn (A1, L1, A9, I12, and L4),
+only one (A9) has a movement penalty tile below it and open space above. The Wizard ends up in A5.</p>
+<p>[grid omitted; no new deductions have been made with certainty]</p>
+<p>There's a lot of work to do in the final round. The only way the Ranger can move exactly five tiles is from C7, and only
+if there is exactly one tent among C6 and C5. So we can place a tent in C7 (the F4/E5 tent is still ambiguous) and force
+the C6/C5 tent into C5. This also forces tents into C9 and E6 to satisfy some trees, which forces another into E8 and
+resolves the final tent from the Ranger's last round into F4.</p>
+<p>We now know the entire map! But we still need to find our wayward bard—the only square that they could have ended up
+in last turn (out of E12, G7, and L8), the only one that will allow them to avoid the edge of the grid this round is E12
+(they end up in K6). The Wizard, meanwhile, takes a leisurely stroll down to F10 to round out the encounter.</p>
+<table class="crossword movement-grid"><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td></tr><tr><td><div>🌳</div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td></tr><tr><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div class="red"></div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div>⛺</div></td><td><div>🌳</div></td><td><div>⛺</div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div>⛺</div></td></tr><tr><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div>🌳</div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td><td><div class="red"></div></td></tr></table>
+
+<p>And that's that! Taking the letters on the squares that each characters visits, in turn order (F1, A6, L1, F6, A11, L5,
+A6, F11, G10, G12, K11, I12, G8, K6, I1, G3, L7, A9, C7, L12, E12, A5, C2, K6, F10) yields the action prompt submission,
+<b>RUN AROUND DIFFICULT TERRAIN</b>.</p>
+    
+</main>
+
+
+    </div>
+    <script>
+        const skipToMainLink = document.querySelector("a.skip-to-main");
+        const mainContentElement = document.getElementsByTagName("main")?.item(0) || document.querySelector("div.content");
+        if (skipToMainLink && mainContentElement) {
+            const mainContentAnchor = document.createElement("a");
+            const anchorId = "main-content-anchor"
+            mainContentAnchor.className = anchorId;
+            mainContentAnchor.id = anchorId;
+            skipToMainLink.href = `#${anchorId}`;
+            mainContentElement.parentNode.insertBefore(mainContentAnchor, mainContentElement);
+        }
+    </script>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+</body>
+
+<!-- Mirrored from 127.0.0.1:8000/solution/its-your-turn by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 03:59:03 GMT -->
+</html>

@@ -1,0 +1,272 @@
+
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from 127.0.0.1:8000/solution/eight-cells by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 03:59:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    
+<title>Solution: Eight Cells</title>
+
+    <meta name="viewport" content="width=device-width initial-scale=0.75">
+    <meta property="og:title" content="Shardhunt">
+    <meta property="og:description" content="The exploration has begun.">
+    <meta property="og:image" content="../static/images/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.092b250a55aa.css">
+    <link rel="stylesheet" href="../static/css/base.09c8dbf8f47c.css">
+    <link rel="stylesheet" href="../static/css/fonts.0d13199733e6.css">
+    <link rel="stylesheet" href="../static/css/library.854ac845fa9b.css">
+    <link rel="stylesheet" href="../static/css/hexgrid.8817683fd1a7.css">
+    <link rel="stylesheet" href="../static/css/story.dbb1df459a18.css">
+    <link rel="stylesheet" href="../static/css/puzzle-grids.710a07b1da01.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../jsi18n/index.html"></script>
+    <script src="../static/js/sorttable.cc47c001d30b.js"></script>
+    <script src="../static/js/tray.ac18af883297.js"></script>
+    <script src="../static/js/notify.2b055445483b.js"></script>
+    <script src="../static/js/time.70f27cb606d3.js"></script>
+    <script src="../static/js/babel-locations.ec43edbaa60f.js"></script>
+    <script src="../static/js/babel-math.c816e003c61f.js"></script>
+    <script src="../static/js/babel-strings.2eb8330794d5.js"></script>
+    <script src="../static/js/english.0a5c0de9794d.js"></script>
+    <script src="../static/js/library-of-babel.ea7f119ed0be.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.7efa6e756590.ico" type="image/vnd.microsoft.icon">
+    
+    
+    
+</head>
+<body>
+    <a class="skip-to-main">Press enter to skip to main content.</a>
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <svg style="width: 80px; height: 40px; transform:scaleX(-1);">
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.12105891,-0.06989339,-0.06989339,0.12105891,15.937645,34.081971)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.08954302,-0.05169769,-0.05169769,0.08954302,27.365155,27.196551)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.05560687,-0.03210465,-0.03210465,0.05560687,35.172065,19.782371)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                </svg>
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a href="../the-library.html">
+                    The Library
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                
+                <svg style="width: 80px; height: 40px;">
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.12105891,-0.06989339,-0.06989339,0.12105891,15.937645,34.081971)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.08954302,-0.05169769,-0.05169769,0.08954302,27.365155,27.196551)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.05560687,-0.03210465,-0.03210465,0.05560687,35.172065,19.782371)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                </svg>
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/eight-cells.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+            <a href="../login.html" class="btn">Login</a>
+        
+        </div>
+    </nav>
+    
+    <script>
+    
+    
+    </script>
+    <div class="content">
+        
+
+<style>
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 2rem 0;
+}
+</style>
+
+<h1>
+    Solution: Eight Cells
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer spoiler">JINGLE DRESS</span></div>
+</h1>
+
+<main class="puzzle-main">
+    <h2 style="margin-top: 0">
+        Written by
+        
+Yanaphat Hemrattaphan
+
+    </h2>
+
+    
+    <style>
+
+    table {
+        /* display: block; */
+        margin: auto;
+        table-layout: fixed;
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #grid td {
+        width: 65px;
+        height: 65px;
+        padding: 0px;
+        text-align: center;
+        position: relative;
+    }
+    .color1 {
+        background-color: rgb(162, 1, 248);
+    }
+    .color2 {
+        background-color: rgb(222, 171, 226);
+    }
+    .color3 {
+        background-color: rgb(80, 238, 255);
+    }
+    .color4 {
+        background-color: rgb(255, 51, 51);
+    }
+    .color5 {
+        background-color: rgb(100, 255, 118);
+    }
+    .color6 {
+        background-color: rgb(130, 130, 130);
+    }
+    .color7 {
+        background-color: rgb(49, 57, 214);
+    }
+    .color8 {
+        background-color: rgb(235, 18, 206);
+    }
+    .color9 {
+        background-color: rgb(250, 244, 67);
+    }
+    .color10 {
+        background-color: rgb(241, 170, 16);
+    }
+</style>
+<p>This is a variant of N-Cells (e.g. <a href="http://www.cross-plus-a.com/puzzles.htm#Foseruzu">Four Cells</a>) except with eight cells and in 3D.
+Solving the logic grid divides the 4x4x5 volume into ten regions of eight cubes each. One possible logical solution path can be found
+in <a href="https://docs.google.com/spreadsheets/d/1oKB_5wXUMI8vG2vu3-ZR6m2vmyDGsaFBr_S4iQ4Nf64/edit?usp=sharing" target="_blank">this google sheet</a>.</p>
+<!-- grid 1 -->
+<table id = "grid"><tr><td style="border:1px solid black" class = "color1">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color1">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color1">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color1">5<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color2">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color3">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color4">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color5">5<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color2">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color6">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color4">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color6">5<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color6">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color6">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color6">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color6">3<div class="box-content"></div></td></tr></table>
+<!-- grid 2 --><table id = "grid" class = "area"><tr><td style="border:1px solid black" class = "color2">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color1">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color1">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color1">3<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color2">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color3">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color4">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color5">4<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color2">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color5">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color5">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color5">4<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color5">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color5">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color7">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color6">4<div class="box-content"></div></td></tr></table>
+<!-- grid 3 --><table id = "grid" class = "area"><tr><td style="border:1px solid black" class = "color2">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color3">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color9">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color1">5<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color3">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color3">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color4">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color4">4<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color7">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color7">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color5">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color8">5<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color10">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color7">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color7">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color6">5<div class="box-content"></div></td></tr></table>
+<!-- grid 4 --><table id = "grid" class = "area"><tr><td style="border:1px solid black"class = "color2">4<div class="box-content"></div></td><td style="border:1px solid black"class = "color3">4<div class="box-content"></div></td><td style="border:1px solid black"class = "color9">4<div class="box-content"></div></td><td style="border:1px solid black"class = "color4">4<div class="box-content"></div></td></tr><tr><td style="border:1px solid black"class = "color10">4<div class="box-content"></div></td><td style="border:1px solid black"class = "color7">4<div class="box-content"></div></td><td style="border:1px solid black"class = "color9">4<div class="box-content"></div></td><td style="border:1px solid black"class = "color4">4<div class="box-content"></div></td></tr><tr><td style="border:1px solid black"class = "color10">3<div class="box-content"></div></td><td style="border:1px solid black"class = "color7">4<div class="box-content"></div></td><td style="border:1px solid black"class = "color9">4<div class="box-content"></div></td><td style="border:1px solid black"class = "color8">4<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color10">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color9">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color9">2<div class="box-content"></div></td><td style="border:1px solid black" class = "color9">5<div class="box-content"></div></td></tr></table>
+<!-- grid 5 --><table id = "grid" class = "area"><tr><td style="border:1px solid black" class = "color2">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color3">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color3">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color4">5<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color10">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color7">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color8">4<div class="box-content"></div></td><td style="border:1px solid black" class = "color8">4<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color10">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color8">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color8">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color8">2<div class="box-content"></div></td></tr><tr><td style="border:1px solid black" class = "color10">3<div class="box-content"></div></td><td style="border:1px solid black" class = "color10">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color9">5<div class="box-content"></div></td><td style="border:1px solid black" class = "color8">5<div class="box-content"></div></td></tr></table>
+
+<p>The red circles are inside five of the 
+ten regions. In each of these regions one of the circles has a plus in it. This is a 
+hint to sum up the numbers with red circles (including the one with the plus) per each region. 
+Reading the A1Z26 letters in the level where the corresponding circle with the plus appears gives WHUTS. 
+A quick search will lead to <a href="https://whuts.org/">https://whuts.org/</a> where you can find all 
+261 of hypercube nets.</p>
+<p>The five regions we have are also valid nets of hypercubes. The medal and clock emojis 
+suggest that we should find the person who solves each hypercube net and their submission time. 
+The blanks are enumerations of the solvers and are ordered by the hypercube net ID which hopefully 
+helps alleviate the tedium of parsing through all the nets. Reorder by solve time (note the clock emojis 
+are consistent with the fastest and slowest time in our dataset) and read the extracted letters 
+in column major order to get the final answer phrase IT IS <span class="spoiler">JINGLE DRESS</span>.</p>
+<table><thead><tr><th>Solved By</th><th>ID</th><th>Time</th><th>Index 1</th><th>Index 2</th><th>Index 3</th></tr></thead><tbody><tr><td>Dmitriy Molostvov</td><td>#251</td><td>05/14/21 5:26 PM</td><td>I</td><td>I</td><td>D</td></tr><tr><td>Andrew Taylor</td><td>#140</td><td>05/14/21 5:36 PM</td><td>T</td><td>N</td><td>R</td></tr><tr><td>Benjamin Grant</td><td>#137</td><td>05/14/21 5:47 PM</td><td>I</td><td>G</td><td>E</td></tr><tr><td>Lewis Sugden</td><td>#109</td><td>05/14/21 6:01 PM</td><td>S</td><td>L</td><td>S</td></tr><tr><td>Jim Andress</td><td>#197</td><td>05/14/21 6:14 PM</td><td>J</td><td>E</td><td>S</td></tr></tbody></table>
+
+    
+    
+    <h2 id="authors-notes">Author&rsquo;s Notes</h2>
+    
+<p>This puzzle is a part of the logic puzzle trilogy: 
+    <a href="https://shardhunt.com/puzzle/join-or-die">Join, or Die</a>, 
+    <a href="https://shardhunt.com/puzzle/identification">Identification</a>, 
+    and Eight Cells. Join, or Die foreshadows the event on Round 2, 
+    Identification gives a (very lengthy) backstory, and Eight Cells is the aftermath. 
+    You can think about Join, or Die as a puzzle about 2D net of a 3d object. And after 
+    the event in Round 2 it transforms into Eight Cells: a puzzle about 3D net of a 4D object.</p>
+
+
+    
+
+    
+    
+
+    
+    
+</main>
+
+
+    </div>
+    <script>
+        const skipToMainLink = document.querySelector("a.skip-to-main");
+        const mainContentElement = document.getElementsByTagName("main")?.item(0) || document.querySelector("div.content");
+        if (skipToMainLink && mainContentElement) {
+            const mainContentAnchor = document.createElement("a");
+            const anchorId = "main-content-anchor"
+            mainContentAnchor.className = anchorId;
+            mainContentAnchor.id = anchorId;
+            skipToMainLink.href = `#${anchorId}`;
+            mainContentElement.parentNode.insertBefore(mainContentAnchor, mainContentElement);
+        }
+    </script>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+</body>
+
+<!-- Mirrored from 127.0.0.1:8000/solution/eight-cells by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 03:59:01 GMT -->
+</html>

@@ -1,0 +1,288 @@
+
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from 127.0.0.1:8000/solution/rovers by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 03:59:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    
+<title>Solution: Rovers</title>
+
+    <meta name="viewport" content="width=device-width initial-scale=0.75">
+    <meta property="og:title" content="Shardhunt">
+    <meta property="og:description" content="The exploration has begun.">
+    <meta property="og:image" content="../static/images/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.092b250a55aa.css">
+    <link rel="stylesheet" href="../static/css/base.09c8dbf8f47c.css">
+    <link rel="stylesheet" href="../static/css/fonts.0d13199733e6.css">
+    <link rel="stylesheet" href="../static/css/library.854ac845fa9b.css">
+    <link rel="stylesheet" href="../static/css/hexgrid.8817683fd1a7.css">
+    <link rel="stylesheet" href="../static/css/story.dbb1df459a18.css">
+    <link rel="stylesheet" href="../static/css/puzzle-grids.710a07b1da01.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../jsi18n/index.html"></script>
+    <script src="../static/js/sorttable.cc47c001d30b.js"></script>
+    <script src="../static/js/tray.ac18af883297.js"></script>
+    <script src="../static/js/notify.2b055445483b.js"></script>
+    <script src="../static/js/time.70f27cb606d3.js"></script>
+    <script src="../static/js/babel-locations.ec43edbaa60f.js"></script>
+    <script src="../static/js/babel-math.c816e003c61f.js"></script>
+    <script src="../static/js/babel-strings.2eb8330794d5.js"></script>
+    <script src="../static/js/english.0a5c0de9794d.js"></script>
+    <script src="../static/js/library-of-babel.ea7f119ed0be.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.7efa6e756590.ico" type="image/vnd.microsoft.icon">
+    
+    
+    
+</head>
+<body>
+    <a class="skip-to-main">Press enter to skip to main content.</a>
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <svg style="width: 80px; height: 40px; transform:scaleX(-1);">
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.12105891,-0.06989339,-0.06989339,0.12105891,15.937645,34.081971)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.08954302,-0.05169769,-0.05169769,0.08954302,27.365155,27.196551)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.05560687,-0.03210465,-0.03210465,0.05560687,35.172065,19.782371)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                </svg>
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a href="../the-library.html">
+                    The Library
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                
+                <svg style="width: 80px; height: 40px;">
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.12105891,-0.06989339,-0.06989339,0.12105891,15.937645,34.081971)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.08954302,-0.05169769,-0.05169769,0.08954302,27.365155,27.196551)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                    <path style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.0252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                       transform="scale(2.3) matrix(-0.05560687,-0.03210465,-0.03210465,0.05560687,35.172065,19.782371)"
+                       d="m 121.2179,-93.212584 -23.935509,-41.457516 23.935509,-41.45753 47.87102,0 23.93551,41.45752 -23.93551,41.457525 z"></path>
+                </svg>
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/rovers.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+            <a href="../login.html" class="btn">Login</a>
+        
+        </div>
+    </nav>
+    
+    <script>
+    
+    
+    </script>
+    <div class="content">
+        
+
+<style>
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 2rem 0;
+}
+</style>
+
+<h1>
+    Solution: Rovers
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer spoiler">GOLF</span></div>
+</h1>
+
+<main class="puzzle-main">
+    <h2 style="margin-top: 0">
+        Written by
+        
+Thomas Gordon; art by Olga Vinogradova
+
+    </h2>
+
+    
+    <style>
+    img {
+        display: block;
+        margin: auto;
+        width: 400px;
+    }
+</style>
+
+<p>Some key realisations must be made in order to start: firstly, the rovers are placed on the second floor of the Library, 
+which is laid out differently to the first (and the interactive Library); secondly, the About Page describes how the hexes 
+are numbered, which can be verified by clicking through the interactive Library. </p>
+<p>Some time should also be spent understanding how the rovers move. Each rover has a series of instructions, which it executes 
+one at a time (one each "minute"). The rover can wait one minute (✕), move forward one hex in the direction it is facing (↑), 
+spin clockwise 60 degrees (↻), or spin anticlockwise 60 degrees (↺). The number next to a symbol indicates how many times 
+that instruction should be executed; so a ↑3 means move forwards three times. Rovers can also collide with each other (either 
+by being in the same hex at the same time, or trying to pass through the same door at the same time in opposite directions) and 
+the walls of the Library. Rovers also do not disappear when they complete their code blocks; they hang around, causing problems.</p>
+<p>With all of that understood, we can start to place the rovers.</p>
+<h3>Rover Placements</h3>
+
+<p>All rovers are uniquely placeable using just their perspectives. </p>
+<table><tr><td><b>Image</b></td><td><b>Location and Perspective</b></td></tr><tr><td>1</td><td>J facing ENE</td></tr><tr><td>2</td><td>6 facing ESE</td></tr><tr><td>3</td><td>V facing WSW</td></tr><tr><td>4</td><td>A facing S</td></tr><tr><td>5</td><td>M facing N</td></tr><tr><td>6</td><td>Z facing WNW</td></tr><tr><td>7</td><td>1A facing S</td></tr></table>
+
+<p>Here's our rover starting placements:</p>
+<p><img src="../static/solution_resources/rovers/roversol2.png" /><h3>Rover Code Blocks</h3></p>
+<p>Now we can start associating code blocks to rovers. Since code blocks tell us how rovers move regardless of where they start, 
+we can map out what hexes they must move through and then work out which starting placement that rover must have (out of our 
+limited options) in order to avoid smashing into walls. This uniquely determines all of the code block associations:</p>
+<table><tr><td><b>Image</b></td><td><b>Location and Perspective</b></td><td><b>Code Block</b></td></tr><tr><td>1</td><td>J facing ENE</td><td>5th</td></tr><tr><td>2</td><td>6 facing ESE</td><td>6th</td></tr><tr><td>3</td><td>V facing WSW</td><td>3rd</td></tr><tr><td>4</td><td>A facing S</td><td>1st</td></tr><tr><td>5</td><td>M facing N</td><td>4th</td></tr><tr><td>6</td><td>Z facing WNW</td><td>2nd</td></tr><tr><td>7</td><td>1A facing S</td><td>???</td></tr></table>
+
+<p>We now have six rovers moving around each other, never colliding. (A complete slideshow of each of the rovers' movements, 
+synchronised, is <a href="https://docs.google.com/presentation/d/1wxvNvx4FPm-jdnmGGK1QQHF6BewaUZpidr_xpFVaoi0/edit?usp=sharing">here</a>. 
+This also includes the movement of the final rover, which will be determined below.)</p>
+<p>Time to determine where the final rover can go.</p>
+<h3>The Final Rover</h3>
+
+<p>The final rover must make a specific series of moves (waiting, turning anticlockwise, moving forward, turning anticlockwise, moving 
+forward, turning anticlockwise, and moving forward in that order) and end on hex M. This means that the rover can only move in 
+three line segments and turn twice after picking an initial direction!</p>
+<p>The final rover has no paths that work going ESE first (i.e. right), since its suitable paths are blocked by walls. The rover 
+also can't start by moving downwards, since that would require a starting turn that is a multiple of 6. By process of elimination, 
+it must start by going WSW (i.e. left)!</p>
+<p>Let's consider all possible paths. There are, broadly, two kinds of paths; "C paths", where the two turns are both 60 degrees 
+anticlockwise (or, in one case, 60 degrees and 120 degrees) respectively; and "hook paths", where the two turns are 120 degrees 
+and 300 degrees anticlockwise respectively. (These paths are named for their shapes.)</p>
+<p>Examining each of these hook paths:</p>
+<table><tr><td><b>Path Shape</b></td><td><b>Reason It Can&#39;t Work</b></td></tr><tr><td>forward 1, turn 120°, forward 1, turn 300°, forward 5</td><td>Collides with rover 1 in hex 5 (the final rover is forced to leave after minute 24, and can&#39;t reach that hex before rover 1 ends there)</td></tr><tr><td>forward 2, turn 120°, forward 2, turn 300°, forward 4</td><td>Collides with rover 1 in hex 5 (the final rover is forced to leave after minute 24, and can&#39;t reach that hex before rover 1 ends there)</td></tr><tr><td>forward 3, turn 120°, forward 3, turn 300°, forward 3</td><td>Collides with a wall</td></tr><tr><td>forward 4, turn 120°, forward 4, turn 300°, forward 2</td><td>Collides with rover 1 in hex 5 (the final rover is forced to leave after minute 24, and can&#39;t reach that hex before rover 1 ends there)</td></tr><tr><td>forward 5, turn 120°, forward 5, turn 300°, forward 1</td><td>Collides with rover 5 in hex Y (the final rover can&#39;t reach that hex before rover 5 ends there)</td></tr></table>
+
+<p>And C paths:</p>
+<table><tr><td><b>Path Shape</b></td><td><b>Reason It Can&#39;t Work</b></td></tr><tr><td>forward 5, turn 120°, forward 5, turn 300°, forward 1</td><td>Collides with rover 5 in hex Y (the final rover can&#39;t reach that hex before rover 5 ends there)</td></tr><tr><td>forward 1, turn 60°, forward 6, turn 120°, forward 1</td><td>Collides with rover 4 in hex 2 (the final rover can&#39;t reach that hex before rover 4 ends there)</td></tr><tr><td>forward 1, turn 60°, forward 5, turn 60°, forward 1</td><td>Collides with rover 4 in hex 2 (the final rover can&#39;t reach that hex before rover 4 ends there)</td></tr><tr><td>forward 2, turn 60°, forward 4, turn 60°, forward 2</td><td>Collides with rover 3 whilst traveling south</td></tr><tr><td>forward 3, turn 60°, forward 3, turn 60°, forward 3</td><td>Collides with a wall</td></tr><tr><td>forward 4, turn 60°, forward 2, turn 60°, forward 4</td><td>Collides with rover 5 in hex Y (the final rover can&#39;t reach that hex before rover 5 ends there)</td></tr><tr><td>forward 5, turn 60°, forward 1, turn 60°, forward 5</td><td>Might work!</td></tr></table>
+
+<p>That last one doesn't seem to fail for any reason. Let's check that one out. This is the code block it implies (note 
+that it can spend extra turns spinning and waiting, so we don't know what those numbers are yet):</p>
+<p>[✕? ↺? ↑5 ↺? ↑1 ↺? ↑5]</p>
+<p>The time that the final rover leaves hex 1A is pretty constrained. Too soon, and it will collide with rover 2 (or rover 
+1 if you're really quick). Too late, and it will collide with rover 1 as it enters hex 1A. The final rover ends up 
+having to leave hex 1A at either minute 25 or minute 26.</p>
+<p>If the final rover leaves hex 1A at minute 25, it will be traveling one hex behind rover 2 as it makes its way down that 
+WSW hallway. Thus, when rover 2 spends a turn spinning on hex 1L, the final rover will collide with it there! Thus, it 
+must leave hex 1A at minute 26, the last possible second. This gives us the following code block:</p>
+<p>[✕20 ↺5 ↑5 ↺? ↑1 ↺? ↑5]</p>
+<p>We will need to engineer our turns such that the final rover dodges all of the moving rovers. The moves to be wary of here 
+are rover 2 moving out of hex 1J in minute 33 (we need to pass through that hex); rover 6 moving out of hex W in minute 46 
+(ditto); and rover 3 moving into hex 1L in minute 40 (that's where we are!).</p>
+<p>For our first turn, we can't just turn once, because we'll run into rover 2 before it moves out of the way; and we can't turn 
+13 times, because rover 3 will run into us. Turning 7 times works.</p>
+<p>For our second turn, again turning once will lead to us running into rover 6; likewise with turning 7 times. Turning 13 times 
+is the minimum amount of time it takes for us to wait for rover 6 to move. (And, if we wait any longer, rover 3 will run into 
+us again!)</p>
+<p>Thus, our unique solution for the final rover's movement:</p>
+<p>[✕20 ↺5 ↑5 ↺7 ↑1 ↺13 ↑5]</p>
+<h3>Extraction</h3>
+
+<p>Converting the final rover's moves into letters using A1Z26 gives us the phrase TEEGAME. </p>
+<p>Tees are pieces of equipment used in games of golf; hence, the answer to the puzzle is <span class="spoiler">GOLF</span>.</p>
+
+    
+    
+    <h2 id="authors-notes">Author&rsquo;s Notes</h2>
+    
+
+<p><b>Thomas: </b>
+    I really wanted to write a puzzle like this, because the unique spatial design of the Library allowed for some interesting 
+    deductions to be made. I loved making the Library feel like an actual, real space, and I hope that this puzzle made it come 
+    alive for just a few.
+</p>
+
+<p>
+    This was also a puzzle which was, weirdly enough, more difficult if you didn't pay attention to the story. Teams which did 
+    understood implicitly that the second floor was laid out differently to the first; teams which ignored the story were at a 
+    disadvantage. To teams affected by this, I can only say: skill issue.
+</p>
+
+<p>
+    However, by virtue of this being one of the last puzzles completed for the hunt, there are a number of inelegancies that 
+    also tripped solvers up, and I'm unhappy with a few of them. If this puzzle had had just a little more time to incubate, 
+    there probably would have been nicer cluing on several things, or even maybe a whole other step to the logic. As it stands, 
+    this is the puzzle that went out, and I'm still fairly pleased with it on the whole.
+</p>
+
+
+    
+
+    
+    
+
+    
+    
+</main>
+
+
+    </div>
+    <script>
+        const skipToMainLink = document.querySelector("a.skip-to-main");
+        const mainContentElement = document.getElementsByTagName("main")?.item(0) || document.querySelector("div.content");
+        if (skipToMainLink && mainContentElement) {
+            const mainContentAnchor = document.createElement("a");
+            const anchorId = "main-content-anchor"
+            mainContentAnchor.className = anchorId;
+            mainContentAnchor.id = anchorId;
+            skipToMainLink.href = `#${anchorId}`;
+            mainContentElement.parentNode.insertBefore(mainContentAnchor, mainContentElement);
+        }
+    </script>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+</body>
+
+<!-- Mirrored from 127.0.0.1:8000/solution/rovers by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 03:59:03 GMT -->
+</html>
