@@ -238,6 +238,9 @@
         <ul id="correct-answer-message" class="errorlist nonfield" style="display: none;">
             <li>SANDPIPER is correct!</li>
         </ul>
+        <ul id="partial-answer-message" class="errorlist nonfield" style="display: none;">
+            <li>Correct! That is a subpuzzle answer.</li>
+        </ul>
         <ul id="incorrect-answer-message" class="errorlist nonfield" style="display: none;">
             <li>[] is incorrect.</li>
         </ul>
@@ -390,11 +393,29 @@ but this time Blue Team has a very limited vocabulary.</p>
 <script src="../static/js/copyjack.63db8b40a066.js"></script>
 <script type="text/javascript">
     function checkAnswer() {
-        if (document.getElementById("id_answer").value.toUpperCase().replace(" ", "") === "SANDPIPER") {
+        if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "SANDPIPER") {
             document.getElementById("correct-answer-message").style.display = "";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "SENSE") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "LAUDS") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "RECAP") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "SERIFTYPES") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").style.display = "none";
         } else {
             document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "none";
             document.getElementById("incorrect-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").children[0].innerText = document.getElementById("id_answer").value + " is incorrect.";
         }

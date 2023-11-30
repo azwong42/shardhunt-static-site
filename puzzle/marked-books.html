@@ -368,7 +368,7 @@ also: page numbers need to be updated for new construction
 <script src="../static/js/copyjack.63db8b40a066.js"></script>
 <script type="text/javascript">
     function checkAnswer() {
-        if (document.getElementById("id_answer").value.toUpperCase().replace(" ", "") === "CHECKOUTTHEIRCARDREADERS") {
+        if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "CHECKOUTTHEIRCARDREADERS") {
             document.getElementById("correct-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").style.display = "none";
         } else {

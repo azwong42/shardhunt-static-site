@@ -117,7 +117,7 @@
             <div class="top-left-actions">
                 
 
-<a href="../solution/prologue.html" class="btn">View solution</a>
+<a href="solution/prologue.html" class="btn">View solution</a>
 <a href="stats/prologue.html" class="btn">Stats</a>
 
 
@@ -141,7 +141,28 @@
 </h1>
 
 
+        <form method="post" class="call-in-answer-panel" onsubmit="checkAnswer(); return false;">
+            <input type="hidden" name="csrfmiddlewaretoken" value="Wv0quum87wNjasaGWONjFCN9feghEfpcrWhw99Cdtuy2BpZmNj9uskX9jasnyTkI">
+            <ul id="correct-answer-message" class="errorlist nonfield" style="display: none;">
+                <li>OPEN SESAME is correct!</li>
+            </ul>
+            <ul id="incorrect-answer-message" class="errorlist nonfield" style="display: none;">
+                <li>[] is incorrect.</li>
+            </ul>
 
+
+
+
+            <div class="row">
+                <div class="submitter">
+                    <label for="id_answer">Enter a guess:</label>
+                    <input type="text" name="answer" autofocus maxlength="500" required id="id_answer">
+                    <button class="btn" type="submit">Submit</button>
+                </div>
+            </div>
+
+
+        </form>
     
 
 <main class="puzzle-main clipboard-container">
@@ -198,7 +219,18 @@
 <p><button class="btn clipboard-button"></button></p>
 </main>
 <script src="static/js/copyjack.63db8b40a066.js"></script>
-
+<script type="text/javascript">
+    function checkAnswer() {
+        if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "OPENSESAME") {
+            document.getElementById("correct-answer-message").style.display = "";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "";
+            document.getElementById("incorrect-answer-message").children[0].innerText = document.getElementById("id_answer").value + " is incorrect.";
+        }
+    }
+</script>
     </div>
     <script>
         const skipToMainLink = document.querySelector("a.skip-to-main");

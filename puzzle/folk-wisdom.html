@@ -233,6 +233,14 @@
         <ul id="correct-answer-message" class="errorlist nonfield" style="display: none;">
             <li>WHISKEY BOTTLE is correct!</li>
         </ul>
+        <ul id="prompt-answer-message-1" class="errorlist nonfield" style="display: none;">
+            <li>Nice job! But everyone knows that a picture is worth a thousand words. To get your final piece of ADVICE, please
+                email submissions@shardhunt.com with a photo or video of one of your team members interpreting an idiom literally.
+                Make sure that the subject line of your email includes only the phrase ADVICE.
+                <br><br>
+                Upon completing this action prompt, you would have received the answer <span class="spoiler">WHISKEY BOTTLE</span>.
+            </li>
+        </ul>
         <ul id="incorrect-answer-message" class="errorlist nonfield" style="display: none;">
             <li>[] is incorrect.</li>
         </ul>
@@ -450,11 +458,17 @@ audio {
 <script src="../static/js/copyjack.63db8b40a066.js"></script>
 <script type="text/javascript">
     function checkAnswer() {
-        if (document.getElementById("id_answer").value.toUpperCase().replace(" ", "") === "WHISKEYBOTTLE") {
+        if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "WHISKEYBOTTLE") {
             document.getElementById("correct-answer-message").style.display = "";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "ADVICE") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("prompt-answer-message-1").style.display = "";
             document.getElementById("incorrect-answer-message").style.display = "none";
         } else {
             document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
             document.getElementById("incorrect-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").children[0].innerText = document.getElementById("id_answer").value + " is incorrect.";
         }

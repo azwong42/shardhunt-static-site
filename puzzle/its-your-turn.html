@@ -238,6 +238,44 @@
         <ul id="correct-answer-message" class="errorlist nonfield" style="display: none;">
             <li>IRAN is correct!</li>
         </ul>
+        <ul id="partial-answer-message" class="errorlist nonfield" style="display: none;">
+            <li>Correct! That is a subpuzzle answer.</li>
+        </ul>
+        <ul id="prompt-answer-message-1" class="errorlist nonfield" style="display: none;">
+            <li>Submit a video or photo showing us an innovative way to defeat your enemies! Please demonstrate to us a way to
+                repurpose a common household item into a slashing melee weapon, in any (non-dangerous) way you choose. The item
+                must be something NOT originally intended for use as a weapon. Email us at submissions@shardhunt.com, and make
+                sure the subject line of your email includes only the phrase SLASHING MELEE WEAPON.
+                <br><br>
+                Upon completing this action prompt, you would have received the subpuzzle answer <span class="spoiler">TINY</span>.
+            </li>
+        </ul>
+        <ul id="prompt-answer-message-2" class="errorlist nonfield" style="display: none;">
+            <li>Replenish some of your energy! To keep your strength up after a tiring round of puzzling, it's important to make
+                sure that everyone is hydrating. Please submit a photo or video containing proof that the members of your team
+                are drinking healthy amounts of liquid during this puzzlehunt! Email your evidence to submissions@shardhunt.com,
+                and make sure the subject line of your email includes only the phrase GET YOUR SECOND WIND.
+                <br><br>
+                Upon completing this action prompt, you would have received the subpuzzle answer <span class="spoiler">LAGER</span>.
+            </li>
+        </ul>
+        <ul id="prompt-answer-message-3" class="errorlist nonfield" style="display: none;">
+            <li>Opportunities don't come often, and when they do, they're usually quick to pass! Why don't you take this
+                opportunity to tell us a fun fact or story you've been dying to share with someone--the more bizarre, the better?
+                Email your submission to submissions@shardhunt.com, and make sure the subject line of your email includes only the
+                phrase TAKE THE OPPORTUNITY.
+                <br><br>
+                Upon completing this action prompt, you would have received the subpuzzle answer <span class="spoiler">SCARED</span>.
+            </li>
+        </ul>
+        <ul id="prompt-answer-message-4" class="errorlist nonfield" style="display: none;">
+            <li>Finding the difficult terrain was the first step; now you have to avoid it! Please submit a video or photo of a
+                dramatized game of "The Floor is Lava" to submissions@shardhunt.com. Make sure that the subject line of your email
+                includes only the phrase RUN AROUND DIFFICULT TERRAIN.
+                <br><br>
+                Upon completing this action prompt, you would have received the subpuzzle answer <span class="spoiler">TAXING</span>.
+            </li>
+        </ul>
         <ul id="incorrect-answer-message" class="errorlist nonfield" style="display: none;">
             <li>[] is incorrect.</li>
         </ul>
@@ -444,11 +482,85 @@ I react if...
 <script src="../static/js/copyjack.63db8b40a066.js"></script>
 <script type="text/javascript">
     function checkAnswer() {
-        if (document.getElementById("id_answer").value.toUpperCase().replace(" ", "") === "IRAN") {
+        if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "IRAN") {
             document.getElementById("correct-answer-message").style.display = "";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("prompt-answer-message-2").style.display = "none";
+            document.getElementById("prompt-answer-message-3").style.display = "none";
+            document.getElementById("prompt-answer-message-4").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "TINY") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("prompt-answer-message-2").style.display = "none";
+            document.getElementById("prompt-answer-message-3").style.display = "none";
+            document.getElementById("prompt-answer-message-4").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "LAGER") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("prompt-answer-message-2").style.display = "none";
+            document.getElementById("prompt-answer-message-3").style.display = "none";
+            document.getElementById("prompt-answer-message-4").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "TAXING") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("prompt-answer-message-2").style.display = "none";
+            document.getElementById("prompt-answer-message-3").style.display = "none";
+            document.getElementById("prompt-answer-message-4").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "SCARED") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("prompt-answer-message-2").style.display = "none";
+            document.getElementById("prompt-answer-message-3").style.display = "none";
+            document.getElementById("prompt-answer-message-4").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "SLASHINGMELEEWEAPON") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("prompt-answer-message-1").style.display = "";
+            document.getElementById("prompt-answer-message-2").style.display = "none";
+            document.getElementById("prompt-answer-message-3").style.display = "none";
+            document.getElementById("prompt-answer-message-4").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "GETYOURSECONDWIND") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("prompt-answer-message-2").style.display = "";
+            document.getElementById("prompt-answer-message-3").style.display = "none";
+            document.getElementById("prompt-answer-message-4").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "TAKETHEOPPORTUNITY") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("prompt-answer-message-2").style.display = "none";
+            document.getElementById("prompt-answer-message-3").style.display = "";
+            document.getElementById("prompt-answer-message-4").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "RUNAROUNDDIFFICULTTERRAIN") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("prompt-answer-message-2").style.display = "none";
+            document.getElementById("prompt-answer-message-3").style.display = "none";
+            document.getElementById("prompt-answer-message-4").style.display = "";
             document.getElementById("incorrect-answer-message").style.display = "none";
         } else {
             document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("prompt-answer-message-1").style.display = "none";
+            document.getElementById("prompt-answer-message-2").style.display = "none";
+            document.getElementById("prompt-answer-message-3").style.display = "none";
+            document.getElementById("prompt-answer-message-4").style.display = "none";
             document.getElementById("incorrect-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").children[0].innerText = document.getElementById("id_answer").value + " is incorrect.";
         }

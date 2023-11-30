@@ -238,6 +238,9 @@
         <ul id="correct-answer-message" class="errorlist nonfield" style="display: none;">
             <li>AGATE is correct!</li>
         </ul>
+        <ul id="partial-answer-message" class="errorlist nonfield" style="display: none;">
+            <li>Keep going!</li>
+        </ul>
         <ul id="incorrect-answer-message" class="errorlist nonfield" style="display: none;">
             <li>[] is incorrect.</li>
         </ul>
@@ -314,11 +317,25 @@
 <script src="../static/js/copyjack.63db8b40a066.js"></script>
 <script type="text/javascript">
     function checkAnswer() {
-        if (document.getElementById("id_answer").value.toUpperCase().replace(" ", "") === "AGATE") {
+        if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "AGATE") {
             document.getElementById("correct-answer-message").style.display = "";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "ADIFFERENTNATION") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "AUSTRALIA") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "TENNESSEEMINERAL") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").style.display = "none";
         } else {
             document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "none";
             document.getElementById("incorrect-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").children[0].innerText = document.getElementById("id_answer").value + " is incorrect.";
         }

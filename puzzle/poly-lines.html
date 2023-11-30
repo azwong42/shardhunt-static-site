@@ -351,7 +351,7 @@
 <script src="../static/js/copyjack.63db8b40a066.js"></script>
 <script type="text/javascript">
     function checkAnswer() {
-        if (document.getElementById("id_answer").value.toUpperCase().replace(" ", "") === "PARTNERDEBATES") {
+        if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "PARTNERDEBATES") {
             document.getElementById("correct-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").style.display = "none";
         } else {

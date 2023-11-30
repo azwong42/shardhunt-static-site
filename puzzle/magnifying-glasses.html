@@ -233,6 +233,12 @@
         <ul id="correct-answer-message" class="errorlist nonfield" style="display: none;">
             <li>TRAINED HUSKIES is correct!</li>
         </ul>
+        <ul id="partial-answer-message" class="errorlist nonfield" style="display: none;">
+            <li>Correct! That is a subpuzzle answer.</li>
+        </ul>
+        <ul id="partial-answer-message-2" class="errorlist nonfield" style="display: none;">
+            <li>Keep going!</li>
+        </ul>
         <ul id="incorrect-answer-message" class="errorlist nonfield" style="display: none;">
             <li>[] is incorrect.</li>
         </ul>
@@ -298,11 +304,55 @@
 <script src="../static/js/copyjack.63db8b40a066.js"></script>
 <script type="text/javascript">
     function checkAnswer() {
-        if (document.getElementById("id_answer").value.toUpperCase().replace(" ", "") === "TRAINEDHUSKIES") {
+        if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "TRAINEDHUSKIES") {
             document.getElementById("correct-answer-message").style.display = "";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message-2").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "AMERICANIDOL") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("partial-answer-message-2").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "THESUNKENRUIN") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("partial-answer-message-2").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "JOHNMAYER") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("partial-answer-message-2").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "MARYSTUART") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("partial-answer-message-2").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "PROJECTPHOENIX") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("partial-answer-message-2").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "SPACEBALLS") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("partial-answer-message-2").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "STARTREK") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "";
+            document.getElementById("partial-answer-message-2").style.display = "none";
+            document.getElementById("incorrect-answer-message").style.display = "none";
+        } else if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "BBCNEWSBRIEF") {
+            document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message-2").style.display = "";
             document.getElementById("incorrect-answer-message").style.display = "none";
         } else {
             document.getElementById("correct-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message").style.display = "none";
+            document.getElementById("partial-answer-message-2").style.display = "none";
             document.getElementById("incorrect-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").children[0].innerText = document.getElementById("id_answer").value + " is incorrect.";
         }

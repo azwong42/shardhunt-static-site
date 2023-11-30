@@ -405,7 +405,7 @@ mark.clue {
 <script src="../static/js/copyjack.63db8b40a066.js"></script>
 <script type="text/javascript">
     function checkAnswer() {
-        if (document.getElementById("id_answer").value.toUpperCase().replace(" ", "") === "TEMPLESTATION") {
+        if (document.getElementById("id_answer").value.toUpperCase().replaceAll(" ", "") === "TEMPLESTATION") {
             document.getElementById("correct-answer-message").style.display = "";
             document.getElementById("incorrect-answer-message").style.display = "none";
         } else {
